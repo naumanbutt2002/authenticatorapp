@@ -2,6 +2,7 @@
 
 [![forthebadge](https://svgshare.com/i/fcr.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
+> Provides a solid foundation for building authenticated web experiences using MongoDB, Express, React, and Node.js.
 ## UI
 ![Cover-mern-auth](https://github.com/naumanbutt2002/mern-auth/assets/86490074/ee8b0f35-0a4e-4d97-b679-ae81107f898f)
 
