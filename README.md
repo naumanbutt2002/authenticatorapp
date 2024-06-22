@@ -33,16 +33,29 @@ Clone the repo to your local machine using `https://github.com/naumanbutt2002/me
 
 ### Setup
 
-Install npm dependencies in both `client` and `api` subdirectories using `npm install`
+Install npm dependencies in both `mern-auth/client` and `mern-auth` subdirectories using `npm install`
 
 ```shell
-$ cd api && npm install
-$ cd client && npm install
+mern-auth$ npm install
+mern-auth$ cd client
+mern-auth/client$ npm install
 ```
-Start the server
 
+Add .env file in mern-auth with variables:
 ```bash
-  npm run start
+MONGO= 'Your MONGODB connection string'
+JWT_SECRET='Any type of letters or keys of your choice'
+```
+Add .env file in mern-auth/client with variables:
+```bash
+VITE_FIREBASE_API_KEY="Your Firebase API Key"
+```
+Run the server and client
+
+```shell
+mern-auth$ npm run dev
+mern-auth$ cd client
+mern-auth/client$ npm run dev
 ```
 Set up a MongoDB database either locally or online via <a href='https://www.mongodb.com/cloud/atlas'>MongoDB Atlas</a>
 
