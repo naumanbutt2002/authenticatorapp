@@ -34,6 +34,13 @@ export const signin = async (req, res, next) => {
   }
 };
 
+function generateRandomNumbers(length) {
+  let randomNumbers = '';
+  for (let i = 0; i < length; i++) {
+      randomNumbers += Math.floor(Math.random() * 10); // Generates a random digit (0-9)
+  }
+  return randomNumbers;
+}
 export const google = async (req, res, next) => {
   try {
     const user = await User.findOne({ email: req.body.email });
@@ -56,7 +63,7 @@ export const google = async (req, res, next) => {
       const newUser = new User({
         username:
           req.body.name.split(' ').join('').toLowerCase() +
-          Math.random().toString(36).slice(-8),
+          generateRandomNumbers(4),
         email: req.body.email,
         password: hashedPassword,
         profilePicture: req.body.photo,
